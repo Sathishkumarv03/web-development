@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakemyTrip Hero Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchButton = document.querySelector('.search-btn');
+            searchButton.addEventListener('click', () => {
+                alert('Search functionality is currently unavailable. Stay tuned!');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">MakemyTrip</a>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Holiday Packages</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Plan Your Perfect Trip</h1>
+                <p class="hero-subtitle">Find the best deals on flights, hotels, and holiday packages</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="From" aria-label="From">
+                <input type="text" placeholder="To" aria-label="To">
+                <input type="date" placeholder="Departure" aria-label="Departure">
+                <input type="date" placeholder="Return" aria-label="Return">
+                <button class="search-btn">Search</button>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h2>About Us</h2>
+            <p>We are dedicated to helping you plan the perfect trip by offering the best deals on flights, hotels, and holiday packages. Whether you're looking for a relaxing vacation or an adventure-packed getaway, MakemyTrip is here to make your dream trip a reality.</p>
+        </section>
+
+        <!-- Featured Destinations Section -->
+        <section class="destination-section">
+            <h2 class="destination-title">Explore Top Destinations</h2>
+            <div class="destination-carousel">
+                <div class="destination-card">
+                    <img src="https://example.com/destination1.jpg" alt="Beach Paradise">
+                    <h3>Beach Paradise</h3>
+                    <p>Relax on the golden beaches and enjoy the sun.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="https://example.com/destination2.jpg" alt="Mountain Adventure">
+                    <h3>Mountain Adventure</h3>
+                    <p>Explore the great outdoors and enjoy breathtaking views.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="https://example.com/destination3.jpg" alt="City Lights">
+                    <h3>City Lights</h3>
+                    <p>Discover the vibrancy of the world’s top cities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What destinations do you offer?</h3>
+                <p>We offer trips to hundreds of destinations worldwide, from tropical beaches to snowy mountains.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I book a trip?</h3>
+                <p>You can search for flights, hotels, and holiday packages directly on our website, and book your trip with just a few clicks.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"An amazing experience! The trip was smooth, and the deals were fantastic!"</p>
+                    <span>- John Doe</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Perfect platform for booking my vacation. Easy to use and great support!"</p>
+                    <span>- Jane Smith</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MakemyTrip - All Rights Reserved</p>
+    </footer>
+
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #003366;
+            padding: 1.5rem;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover {
+            color: #FFD700;
+        }
+
+        .hero {
+            position: relative;
+            background: url('https://www.makemytrip.com/assets/images/hero-section-bg.jpg') no-repeat center center/cover;
+            height: 100vh;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            z-index: 2;
+            color: #FFD700;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            z-index: 2;
+            color: #fff;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .search-container {
+            position: relative;
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 15px;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .search-container input,
+        .search-container button {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 2px solid #003366;
+        }
+
+        .search-container input {
+            width: 30%;
+            min-width: 150px;
+        }
+
+        .search-btn {
+            background: #FFD700;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem 2rem;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .search-btn:hover {
+            background: #ffb800;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background-color: #f7f7f7;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .about-us h2 {
+            font-size: 2.5rem;
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+
+        .about-us p {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Destination Section */
+        .destination-section {
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+
+        .destination-title {
+            font-size: 2rem;
+            color: #003366;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .destination-carousel {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            overflow-x: auto;
+        }
+
+        .destination-card {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .destination-card h3 {
+            background-color: #003366;
+            color: white;
+            padding: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .destination-card p {
+           
+
